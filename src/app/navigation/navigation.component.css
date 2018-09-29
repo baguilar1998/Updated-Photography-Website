@@ -6,3 +6,6 @@
 .navbar-default .navbar-brand {
   color: black;
 }
+.navbar-nav a{
+  font-size: 15pt;
+}
