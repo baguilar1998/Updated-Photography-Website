@@ -1,27 +1,32 @@
 <app-navigation></app-navigation>
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-    <h3 class="w3-center"><b>Projects</b></h3>
-    <p class="w3-center"><em>Here are some of my latest projects I've been working on.</em></p><br>
-
-    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-    <div class="w3-row-padding w3-center">
-      <div class="w3-col m3">
-        <a routerLink="portrait" id="Portraits"><img src="../../assets/Portraits.jpg" style="width:100%" class="w3-hover-opacity" ></a>
-        <p class="title">Portraits</p>
-      </div>
-
-      <div class="w3-col m3">
-        <a routerLink="film" id="Film"><img src="../../assets/Film.jpeg" style="width:100%" class="w3-hover-opacity"></a>
-        <p class="title"> Film </p>
-      </div>
-
-      <div class="w3-col m3">
-       <a routerLink="street" id="Street"> <img src="../../assets/Street.jpg" style="width:100%" class="w3-hover-opacity"></a>
-       <p>Street</p>
-      </div>
-
-      <div class="w3-col m3">
-        <a routerLink="portraits"><img src="../../assets/Event.jpg" style="width:100%" class="w3-hover-opacity"></a>
-        <p>Event</p>
+    <div class="container-fluid">
+      <div class="row text-center offset-1 vertical-center">
+        <!--Portraits-->
+        <div routerLink="portrait" class = "col-md-4">
+          <div class="card" style="width: 25rem; cursor: pointer;">
+            <img class="card-img-top" src="../../assets/Portraits.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <!--Film-->
+        <div  routerLink="film" class="col-md-4">
+            <div class="card" style="width: 25rem;cursor: pointer;" >
+              <img class="card-img-top" src="../../assets/Film.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <!--Street-->
+          <div routerLink="street" class="col-md-4">
+              <div class="card" style="width: 25em; cursor: pointer;">
+                <img class="card-img-top" src="../../assets/Street.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
       </div>
     </div>
